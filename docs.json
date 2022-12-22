@@ -1,0 +1,506 @@
+{
+	"info": {
+		"_postman_id": "c39b6bcf-e6ba-45f8-bf9e-7fc655deeab8",
+		"name": "10-E-Commerce-DEV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22557188"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Update Users",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"liem\",\r\n    \"email\":\"liem@gmail.com\",\r\n    \"role\":\"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/updateUser",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"users",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Password",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"newPassword\":\"newsecret\",\r\n    \"oldPassword\":\"secret\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/updateUserPassword",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"users",
+								"updateUserPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/63933e07364dbfffef922e3e",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"users",
+								"63933e07364dbfffef922e3e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Current User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/showMe",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"users",
+								"showMe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Product",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Upload Image",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products/uploadImage",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"products",
+								"uploadImage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products/123",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"products",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products/123",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"products",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products/123",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"products",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single Product Review",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products/639de066df96fe10b4168779/review",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"products",
+								"639de066df96fe10b4168779",
+								"review"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Logout User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/auth/logout",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"email\": \"john@gmail.com\",\r\n    \"password\": \"secret\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"juga\",\r\n    \"email\": \"juga@gmail.com\",\r\n    \"password\": \"secret\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/register",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Review",
+			"item": [
+				{
+					"name": "Create Review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/review",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"review"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Review",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/review",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"review"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single Review",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/review/123",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"review",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Review",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/review/123",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"review",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Review",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/review/123",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"review",
+								"123"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Create Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/order",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/order",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single Order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/order/123",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"order",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Order",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/order/123",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"order",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Current User Order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/order/showAllMyOrder",
+							"host": [
+								"http://localhost:3000"
+							],
+							"path": [
+								"order",
+								"showAllMyOrder"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
