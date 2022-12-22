@@ -51,19 +51,6 @@ app.use(cookieParser(process.env.JWT_SECRET));
 app.use(express.static('./public'));
 app.use(fileUpload());
 
-
-app.get('/', (req,res) => {
-    //throw new Error('hello fitri');
-    console.log(req.signedCookies);
-    res.send('e-commerce api');
-});
-
-app.get('/api/v1', (req,res) => {
-    //throw new Error('hello fitri');
-    console.log(req.signedCookies);
-    res.send('e-commerce api');
-});
-
 //middleware
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/users', userRouter);
